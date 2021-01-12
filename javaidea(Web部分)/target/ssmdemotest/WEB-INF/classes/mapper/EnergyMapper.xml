@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 指定代理的接口 -->
+<mapper namespace="com.xjg.dao.EnergyMapper">
+
+	<select id="qryAllEnergy" resultType="energy">
+		select * from energy where etime in (select max(etime) from energy group by device_id);
+	</select>
+	
+	
+	<select id="detEnergyById" resultType="energy">
+		select * from energy where device_id=#{arg0}
+	</select>
+</mapper>

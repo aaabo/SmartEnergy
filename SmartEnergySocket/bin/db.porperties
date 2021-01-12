@@ -1,0 +1,4 @@
+driver=com.mysql.cj.jdbc.Driver
+url=jdbc:mysql://47.93.213.46:3306/nygl?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&useSSL=false
+username=root
+password=******

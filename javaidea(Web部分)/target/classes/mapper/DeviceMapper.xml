@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.xjg.dao.DeviceMapper">
+
+	<select id="qryAllDevice" resultType="device">
+		select * from device
+	</select>
+	
+	<delete id="delDeviceById">
+		delete from device where device_id=#{arg0}
+	</delete>
+	
+	<update id="updateDevice" parameterType="device">
+		update device set device_name=#{device_name},address=#{address} where device_id=#{device_id}
+	</update>
+		<select id="detDeviceById" resultType="device">
+		select * from device where device_id=#{arg0}
+	</select>
+	
+	
+		<insert id="addDevice" parameterType="device">
+	insert into device values(null,#{device_name},#{address},now())
+	
+	</insert>
+	
+</mapper>

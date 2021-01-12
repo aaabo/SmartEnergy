@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <!-- namespace 指定代理的接口 -->
+<mapper namespace="com.xjg.dao.AuserMapper">
+	 
+	 <select id="qryAuserByAnameAndApwd" resultType="Auser">
+	 	select * from auser where aname=#{0} and apwd =#{1}
+	 </select>
+	 <select id="qryAuserByAname" resultType="Auser">
+	 	select * from auser where aname=#{0}
+	 </select>
+	 <insert id="auserregister" parameterType="Auser">
+	insert into auser values(#{0},#{1})
+	</insert>
+	
+		<delete id="delAuser">
+		delete from auser where aname=#{arg0}
+	</delete>
+	
+	
+	
+	<update id="updataPwd" parameterType="auser">
+		update auser set apwd=#{apwd}
+	</update>
+</mapper>

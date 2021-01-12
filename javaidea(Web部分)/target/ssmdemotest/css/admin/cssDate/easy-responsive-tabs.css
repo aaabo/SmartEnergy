@@ -1,0 +1,124 @@
+.resp-tabs-list li {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  padding: 18px 25px;
+  width: 33.3%;
+  margin: 0;
+  border: none;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+  color: #fff;
+  text-align:center;
+}
+
+.resp-tabs-container {
+  padding: 0px;
+  background-color: #fff;
+  clear: left;
+  box-shadow: -3px 0px 15px 1px rgba(0, 0, 0, 0.08);
+}
+
+h2.resp-accordion {
+  cursor: pointer;
+  padding: 5px;
+  display: none;
+}
+
+.resp-tab-content {
+  display: none;
+  padding: 15px;
+}
+
+.resp-tab-active {
+  border-bottom: none;
+  background-color: #5ad2d4;
+}
+
+div#horizontalTab {
+  background: #7f82f0;
+
+}
+
+
+/*--tab-1--*/
+.fields input[type="text"],
+.fields input[type="email"],
+.fields input[type="password"],
+.fields .form-control,
+textarea {
+  padding: 7px 0px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+  background: transparent;
+  width: 100%;
+  color: #525252;
+  font-family: 'Lato', sans-serif;
+}
+
+.fields .form-control {
+  box-shadow: none!important;
+  border-radius: 0!important;
+}
+
+textarea {
+  resize: none;
+  height: 100px!important;
+}
+
+.resp-tabs-container input[type="submit"] {
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 0.5em auto 0;
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #7f82f0;
+  border: 2px solid #7f82f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.resp-tabs-container input[type="submit"]:hover {
+  background: #5ad2d4;
+  border-color: #5ad2d4;
+  color: #fff;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.tab1 ul {
+  margin-top: 20px;
+  text-align: left;
+  display: block;
+}
+
+.fields span {
+  font-size: 15px;
+  color: #7f82f0;
+  letter-spacing: 1px;
+}
